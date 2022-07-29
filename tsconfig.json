@@ -14,14 +14,15 @@
     "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
-    "module": "esnext",
+    "module": "ESNext",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "moduleResolution": "node"
   },
   "include": [
-    "next-env.d.ts",
+    "next-env-customer.d.ts",
+    "svg.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

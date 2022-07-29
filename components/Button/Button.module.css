@@ -1,0 +1,36 @@
+.button {
+	width: 120px;
+	height: 40px;
+
+	transition: all 0.5s;
+
+	border-radius: 5px;
+}
+
+.primary {
+	color: black;
+	background-color: var(--primary);
+}
+
+.other {
+	color: var(--black);
+	border: 1px solid var(--gray-light);
+	background: none;
+}
+
+.other:hover {
+	color: var(--white);
+	background-color: black;
+}
+
+.line {
+	display: inline-block;
+
+	margin-left: 10px;
+}
+
+.down {
+	transition: all 0.5ms;
+
+	transform: rotate(90deg);
+}
