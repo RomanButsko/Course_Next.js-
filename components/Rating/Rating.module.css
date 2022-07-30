@@ -1,0 +1,15 @@
+.block {
+	display: inline-block;
+
+	box-sizing: border-box;
+
+	padding: 5px 10px;
+
+	border-radius: 20px;
+
+	background-color: var(--white);
+}
+
+.fill {
+	background-color: var(--prime);
+}

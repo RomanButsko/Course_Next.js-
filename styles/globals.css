@@ -33,10 +33,13 @@ a {
 :root {
 	--black: #3B434E;
 	--white: white;
+	--white-lite: #EBEBEB;
 	--primary: #7653FC;
 	--primary-hover: #CDC6E9;
+	--primary-light: #B3C0D9;
 	--red: #FC8360;
 	--green: #1DC37E;
 	--green-light: #C8F8E4;
+	--red-bold: #DE0000;
 	--font-family: "Noto Sans", sans-serif;
 }

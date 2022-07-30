@@ -1,0 +1,55 @@
+.tag {
+	display: inline-block;
+
+	box-sizing: border-box;
+
+	padding: 5px 10px;
+
+	border-radius: 20px;
+}
+
+.s {
+	cursor: pointer;
+
+	border: 1px solid var(--black);
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 12px;
+}
+
+.sm {
+	cursor: pointer;
+
+	color: var(--primary);
+
+	border: 1px solid var(--primary);
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.l {
+	cursor: pointer;
+
+	color: var(--white);
+
+	background-color: var(--red-bold);
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+}
+
+.lm {
+	cursor: pointer;
+
+	color: var(--white);
+
+	background-color: var(--primary-light);
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 14px;
+}
