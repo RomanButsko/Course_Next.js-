@@ -2,6 +2,7 @@ import { IP } from './P.props';
 import cn from 'classnames';
 import style from './P.module.css';
 
+
 export const PComponent = ({text = '14', className ,children, ...props}: IP): JSX.Element => {
     return (
         <>

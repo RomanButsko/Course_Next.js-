@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Htag, Button, PComponent, Tag, Rating} from '../components/index';
+import { withLayout } from '../layout/Layout/Layout';
 
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
+
+  const [rating, setRating] = useState<number>(4);
+  
   return <>
     <Htag tag='h1'>First Text</Htag>
     <Htag tag='h2'>Second Text</Htag>
@@ -14,6 +18,8 @@ export default function Home(): JSX.Element {
     <Tag fz='12Up'>Дизайн сайтов</Tag>
     <Tag fz='14'>hh.ru</Tag>
     <Tag fz='14Up'>10</Tag>
-    <Rating rating={4} />
+    <Rating rating={rating} isEdit setRating={setRating}/>
     </>;
 }
+
+export default withLayout(Home);

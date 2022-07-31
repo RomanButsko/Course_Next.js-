@@ -5,7 +5,7 @@ const nextConfig = {
 };
 module.exports = {
 	images: {
-		domains: ['courses-top.ru']
+		domains: ['http://www.w3.org/2000/svg']
 	},
 webpack(config, options) {
   config.module.rules.push({
