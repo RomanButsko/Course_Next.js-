@@ -3,11 +3,11 @@ import cn from 'classnames';
 import style from './Rating.module.css';
 
 
-export const Sidebar = ({children}: SidebarProp): JSX.Element => {
+export const Sidebar = ({...props}: SidebarProp): JSX.Element => {
     return (
-        <>
-            SidebarProp
-        </>
+        <div {...props}>
+            Sidebar
+        </div>
     );
 };
 

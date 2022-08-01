@@ -2,7 +2,6 @@ import { RatingProps } from './Rating.props';
 import cn from 'classnames';
 import style from './Rating.module.css';
 import { useEffect, useState } from 'react';
-import Star from './star.svg';
 import Image from 'next/image';
 
 
@@ -26,7 +25,7 @@ export const Rating = ({isEdit = false, rating, className ,children, setRating, 
                 onMouseLeave={() => changeDisplay(i + 1)}           
                 onClick={() => onClick(i + 1)}           
                 >
-                    <Image src={Star} alt='star.svg' width='50px' height='50px'  
+                    <Image src={'/components/Reiting/star.svg'} alt='star.svg' width='50px' height='50px'  
                     tabIndex = {isEdit ? 0 : -1} />
                 </span>
             );

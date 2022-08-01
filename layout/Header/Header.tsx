@@ -3,11 +3,11 @@ import cn from 'classnames';
 import style from './Rating.module.css';
 
 
-export const Header = ({children}: HeaderProp): JSX.Element => {
+export const Header = ({...props}: HeaderProp): JSX.Element => {
     return (
-        <>
-            HeaderProp
-        </>
+        <div {...props}>
+            Header
+        </div>
     );
 };
 

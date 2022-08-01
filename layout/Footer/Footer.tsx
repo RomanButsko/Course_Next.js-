@@ -3,11 +3,11 @@ import cn from 'classnames';
 import style from './Rating.module.css';
 
 
-export const Footer = ({children}: FooterProp): JSX.Element => {
+export const Footer = ({...props}: FooterProp): JSX.Element => {
     return (
-        <>
-            FooterProp
-        </>
+        <div {...props}>
+            Fotter
+        </div>
     );
 };
 
