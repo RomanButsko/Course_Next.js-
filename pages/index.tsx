@@ -21,9 +21,7 @@ function Home({menu}: HomeProps): JSX.Element {
     <Tag fz='14'>hh.ru</Tag>
     <Tag fz='14Up'>10</Tag>
     <Rating rating={rating} isEdit setRating={setRating}/>
-    <ul>
-    {menu.map((item) => (<li key={item._id.secondCategory}>{item._id.secondCategory}</li>))}
-    </ul>
+
     </>;
 }
 

@@ -1,0 +1,61 @@
+/* stylelint-disable selector-class-pattern */
+
+.firstLevel {
+	display: grid;
+
+	grid-template-columns: 24px 1fr;
+
+	gap: 20px;
+
+	align-items: center;
+
+	margin-bottom: 12px;
+
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.activeFirstLevel {
+	color: var(--primary);
+}
+
+.secondLevel {
+	margin-bottom: 10px;
+
+	cursor: pointer;
+	text-transform: uppercase;
+
+	color: var(--gray-ligth);
+}
+
+.secondBlock {
+	padding: 0 10px 0 20px;
+
+	border-left: 1px solid#dfdfdf;
+}
+
+.secondLevelBlock {
+	display: none;
+
+	margin-bottom: 20px;
+}
+
+.secondLevelBlockOpened:last-child {
+	display: block;
+}
+
+.thirdLevel {
+	display: block;
+
+	margin-bottom: 10px;
+
+	cursor: pointer;
+
+	color: var(--primary-light);
+}
+
+.thirdLevelActive,
+.thirdLevel:hover {
+	color: var(--primary);
+}
