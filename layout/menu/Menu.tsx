@@ -4,17 +4,9 @@ import style from './menu.module.css';
 import { useContext } from 'react';
 import { AppContext } from '../../context/app.context';
 import { firstLevelMenu, Page } from '../../interfaces/menu.interfaces';
-import { LevelCategory } from '../../interfaces/page.interfaces';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
-const firstMenu: firstLevelMenu[] = [
-    {route: 'courses', name: 'Курсы', icon:  <Image src={'#'} alt='star.svg' width='50px' height='50px' />, id: LevelCategory.Courses},
-    {route: 'services', name: 'Сервисы', icon:  <Image src={'#'} alt='star.svg' width='50px' height='50px' />, id: LevelCategory.Services},
-    {route: 'books', name: 'Книги', icon:  <Image src={'#'} alt='star.svg' width='50px' height='50px' />, id: LevelCategory.Books},
-    {route: 'products', name: 'Продукты', icon:  <Image src={'#'} alt='star.svg' width='50px' height='50px' />, id: LevelCategory.Products}
-];
+import { firstMenu } from '../../helper/helpers';
 
 export const Menu = ({...props}: SidebarProp): JSX.Element => {
     const {menu, setMenu, firstCategory} = useContext(AppContext);

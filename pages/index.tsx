@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import {Htag, Button, PComponent, Tag, Rating} from '../components/index';
 import { withLayout } from '../layout/Layout/Layout';
 import axios from 'axios';
-import { GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { RootObject } from '../interfaces/menu.interfaces';
+import { firstMenu } from '../helper/helpers';
+import { ParsedUrlQuery } from 'querystring';
 
 function Home({menu}: HomeProps): JSX.Element {
 
@@ -27,7 +29,8 @@ function Home({menu}: HomeProps): JSX.Element {
 
 export default withLayout(Home);
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+
+export const getStaticProps: GetStaticProps<HomeProps> = async ({params}: GetStaticPropsContext<ParsedUrlQuery>) => {
   const firstCategory = 0;
   const {data: menu } = await axios.post<RootObject[]>(process.env.NEXT_PUBLIC_Category + '/api/top-page/find', {
     firstCategory 

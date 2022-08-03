@@ -65,3 +65,4 @@ export interface PageModal {
     sravnikus: Sravnikus;
     learningclub: Learningclub;
 }
+
