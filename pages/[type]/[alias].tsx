@@ -6,15 +6,20 @@ import { LevelCategory, PageModal } from '../../interfaces/page.interfaces';
 import { ParsedUrlQuery } from 'querystring';
 import { ProductModel } from '../../interfaces/product.interfaces';
 import { firstMenu } from '../../helper/helpers';
+import { TopPage } from '../../page-component/Top-pageComponent/TopPageComponent';
+import {TopPageComponentProps } from '../../page-component/Top-pageComponent/TopPageComponent.props';
 
 
-function Home({menu, page, products}: ProductProps): JSX.Element {
+function TopPageA({page, products ,firstCategory }: TopPageComponentProps): JSX.Element {
 
-  return <>
-    </>;
+  return <TopPage
+      firstCategory={firstCategory}
+      page={page}
+      products={products}
+      />
 }
 
-export default withLayout(Home);
+export default withLayout(TopPageA);
 
 export const getStaticPaths: GetStaticPaths = async () => {
   let paths: string[] = [];
@@ -70,7 +75,7 @@ export const getStaticProps: GetStaticProps<ProductProps> = async ({params}: Get
     notFound: true
 };
 }
-}
+};
 interface ProductProps extends Record<string, unknown> {
   menu: RootObject[]
   firstCategory: LevelCategory
